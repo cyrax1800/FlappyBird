@@ -22,8 +22,12 @@ package
 	public class Main extends Sprite 
 	{
 		private var mStarling:Starling;
+		public var stageWidth:int = 320;
+		public var stageHeight:int = 480;
+		
 		public function Main() 
 		{
+			
 			stage.scaleMode = StageScaleMode.NO_SCALE;
 			stage.align = StageAlign.TOP_LEFT;
 			stage.addEventListener(flash.events.Event.DEACTIVATE, deactivate);
@@ -37,11 +41,13 @@ package
 			var iOS:Boolean = SystemUtil.platform == "IOS";
 			
 			var viewPort:Rectangle = RectangleUtil.fit(
-                new Rectangle(0, 0, 640, 960), 
+                new Rectangle(0, 0, 320, 480), 
                 new Rectangle(0, 0, stage.fullScreenWidth, stage.fullScreenHeight), 
-                ScaleMode.SHOW_ALL);
+                ScaleMode.SHOW_ALL, iOS);
 			
-			mStarling = new Starling(Game, stage, viewPort);
+			mStarling = new Starling(Game, stage, viewPort, null, "auto", "auto");
+			mStarling.stage.stageWidth  = 320; 
+            mStarling.stage.stageHeight = 480;
 			mStarling.addEventListener(starling.events.Event.ROOT_CREATED, function():void {
 				mStarling.start();
 			});

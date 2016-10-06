@@ -42,6 +42,16 @@ package
 			this.addChild(pipeMouth);
 		}
 		
+		public function setPipe(height:Number):void {
+			pipeStick.height = height - pipeMouth.height;
+			if (position == TOP) {
+				pipeStick.y = height - pipeMouth.height;;
+				pipeMouth.y = pipeStick.height;
+			}else {
+				pipeStick.y = pipeMouth.height;
+			}
+		}
+		
 	}
 
 }

@@ -2,8 +2,10 @@ package
 {
 	import com.greensock.TweenLite;
 	import com.greensock.easing.Linear;
+	import flash.geom.Rectangle;
 	import starling.display.Image;
 	import starling.display.Sprite;
+	import starling.textures.Texture;
 	import starling.textures.TextureAtlas;
 	/**
 	 * ...
@@ -11,47 +13,23 @@ package
 	 */
 	public class Land extends Sprite
 	{
-		
 		public var bottomBackground1:Image;
 		public var bottomBackground2:Image;
 		
 		public function Land(gameAtlas:TextureAtlas) 
 		{
-			bottomBackground1 = new Image(gameAtlas.getTexture("land"));
-			bottomBackground1.alignPivot("left");
-			bottomBackground1.x = 0;
-			
-			bottomBackground2 = new Image(gameAtlas.getTexture("land"));
-			bottomBackground2.alignPivot("left");
-			bottomBackground2.x = Game.STAGE_WIDTH;
+			var texture:Texture = gameAtlas.getTexture("land")
+			bottomBackground1 = new Image(texture);
+			bottomBackground1.width = Game.STAGE_WIDTH;
+			bottomBackground1.tileGrid = new Rectangle(0, 0, texture.width, texture.height);
 			
 			this.addChild(bottomBackground1);
-			this.addChild(bottomBackground2);
 		}
 		
-		public function tween():void {
-			TweenLite.to(bottomBackground1, 2, { ease:Linear.easeNone, x: -Game.STAGE_WIDTH, onComplete:function():void{
-				bottomBackground1.x = Game.STAGE_WIDTH;
-				tweenLand1();
-			} } );
-			TweenLite.to(bottomBackground2, 4, { ease:Linear.easeNone, x: -Game.STAGE_WIDTH, onComplete:function():void{
-				bottomBackground2.x = Game.STAGE_WIDTH;
-				tweenLand2();
-			} } );
-		}
-		
-		private function tweenLand1():void {
-			TweenLite.to(bottomBackground1, 4, { ease:Linear.easeNone, x: -Game.STAGE_WIDTH, onComplete:function():void{
-				bottomBackground1.x = Game.STAGE_WIDTH;
-				tweenLand1();
-			} } );
-		}
-		
-		private function tweenLand2():void {
-			TweenLite.to(bottomBackground2, 4, { ease:Linear.easeNone, x: -Game.STAGE_WIDTH, onComplete:function():void{
-				bottomBackground2.x = Game.STAGE_WIDTH;
-				tweenLand2();
-			} } );
+		public function move(passedTime:Number):void {
+			var distance:Number = 130 * passedTime;;
+			bottomBackground1.tileGrid.x -= distance; 
+			bottomBackground1.tileGrid = bottomBackground1.tileGrid; 	
 		}
 	}
 }

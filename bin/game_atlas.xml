@@ -4,20 +4,20 @@
 	Created with ShoeBox
 	http://renderhjs.net/shoebox/
 	-->
-	<SubTexture name="bird_01"	x="249"	y="464"	width="34"	height="24" frameX="-0" frameY="-0" frameWidth="34" frameHeight="24"/>
-	<SubTexture name="bird_02"	x="214"	y="464"	width="34"	height="24" frameX="-0" frameY="-0" frameWidth="34" frameHeight="24"/>
-	<SubTexture name="bird_03"	x="116"	y="473"	width="34"	height="24" frameX="-0" frameY="-0" frameWidth="34" frameHeight="24"/>
-	<SubTexture name="bird_04"	x="214"	y="464"	width="34"	height="24" frameX="-0" frameY="-0" frameWidth="34" frameHeight="24"/>
-	<SubTexture name="ceiling"	x="0"	y="0"	width="320"	height="16" frameX="-0" frameY="-0" frameWidth="320" frameHeight="16"/>
-	<SubTexture name="land"	x="0"	y="127"	width="320"	height="112" frameX="-0" frameY="-0" frameWidth="320" frameHeight="112"/>
-	<SubTexture name="medal_bronze"	x="169"	y="464"	width="44"	height="44" frameX="-0" frameY="-0" frameWidth="44" frameHeight="44"/>
-	<SubTexture name="medal_gold"	x="169"	y="419"	width="44"	height="44" frameX="-0" frameY="-0" frameWidth="44" frameHeight="44"/>
-	<SubTexture name="medal_platinum"	x="214"	y="419"	width="44"	height="44" frameX="-0" frameY="-0" frameWidth="44" frameHeight="44"/>
-	<SubTexture name="pipe-down"	x="116"	y="446"	width="52"	height="26" frameX="-0" frameY="-0" frameWidth="52" frameHeight="26"/>
-	<SubTexture name="pipe-up"	x="116"	y="419"	width="52"	height="26" frameX="-0" frameY="-0" frameWidth="52" frameHeight="26"/>
-	<SubTexture name="pipe"	x="0"	y="490"	width="48"	height="3" frameX="-0" frameY="-0" frameWidth="48" frameHeight="3"/>
-	<SubTexture name="replay"	x="0"	y="419"	width="115"	height="70" frameX="-0" frameY="-0" frameWidth="115" frameHeight="70"/>
-	<SubTexture name="scoreboard"	x="0"	y="240"	width="236"	height="178" frameX="-0" frameY="-0" frameWidth="236" frameHeight="178"/>
-	<SubTexture name="sky"	x="0"	y="17"	width="320"	height="109" frameX="-0" frameY="-0" frameWidth="320" frameHeight="109"/>
-	<SubTexture name="splash"	x="237"	y="240"	width="188"	height="170" frameX="-0" frameY="-0" frameWidth="188" frameHeight="170"/>
+	<SubTexture name="bird_01"	x="169"	y="402"	width="34"	height="24" frameX="-0" frameY="-0" frameWidth="34" frameHeight="24"/>
+	<SubTexture name="bird_02"	x="153"	y="474"	width="34"	height="24" frameX="-0" frameY="-0" frameWidth="34" frameHeight="24"/>
+	<SubTexture name="bird_03"	x="118"	y="474"	width="34"	height="24" frameX="-0" frameY="-0" frameWidth="34" frameHeight="24"/>
+	<SubTexture name="bird_04"	x="153"	y="474"	width="34"	height="24" frameX="-0" frameY="-0" frameWidth="34" frameHeight="24"/>
+	<SubTexture name="ceiling"	x="0"	y="473"	width="64"	height="16" frameX="-0" frameY="-0" frameWidth="64" frameHeight="16"/>
+	<SubTexture name="land"	x="0"	y="0"	width="336"	height="112" frameX="-0" frameY="-0" frameWidth="336" frameHeight="112"/>
+	<SubTexture name="medal_bronze"	x="163"	y="429"	width="44"	height="44" frameX="-0" frameY="-0" frameWidth="44" frameHeight="44"/>
+	<SubTexture name="medal_gold"	x="118"	y="429"	width="44"	height="44" frameX="-0" frameY="-0" frameWidth="44" frameHeight="44"/>
+	<SubTexture name="medal_platinum"	x="208"	y="402"	width="44"	height="44" frameX="-0" frameY="-0" frameWidth="44" frameHeight="44"/>
+	<SubTexture name="pipe-down"	x="116"	y="402"	width="52"	height="26" frameX="-0" frameY="-0" frameWidth="52" frameHeight="26"/>
+	<SubTexture name="pipe-up"	x="65"	y="473"	width="52"	height="26" frameX="-0" frameY="-0" frameWidth="52" frameHeight="26"/>
+	<SubTexture name="pipe"	x="0"	y="500"	width="48"	height="3" frameX="-0" frameY="-0" frameWidth="48" frameHeight="3"/>
+	<SubTexture name="replay"	x="0"	y="402"	width="115"	height="70" frameX="-0" frameY="-0" frameWidth="115" frameHeight="70"/>
+	<SubTexture name="scoreboard"	x="0"	y="223"	width="236"	height="178" frameX="-0" frameY="-0" frameWidth="236" frameHeight="178"/>
+	<SubTexture name="sky"	x="0"	y="113"	width="276"	height="109" frameX="-0" frameY="-0" frameWidth="276" frameHeight="109"/>
+	<SubTexture name="splash"	x="237"	y="223"	width="188"	height="170" frameX="-0" frameY="-0" frameWidth="188" frameHeight="170"/>
 </TextureAtlas>

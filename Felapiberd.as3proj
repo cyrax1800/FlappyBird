@@ -54,8 +54,7 @@
   </includeLibraries>
   <!-- SWC Libraries -->
   <libraryPaths>
-    <element path="libs\nape-release.swc" />
-    <element path="libs\feathers.swc" />
+    <!-- example: <element path="..." /> -->
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
