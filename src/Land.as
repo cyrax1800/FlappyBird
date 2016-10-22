@@ -14,7 +14,6 @@ package
 	public class Land extends Sprite
 	{
 		public var bottomBackground1:Image;
-		public var bottomBackground2:Image;
 		
 		public function Land(gameAtlas:TextureAtlas) 
 		{

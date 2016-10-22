@@ -13,6 +13,7 @@ package
 	import starling.display.Quad;
 	import starling.display.Sprite;
 	import starling.events.Event;
+	import starling.events.Touch;
 	import starling.events.TouchEvent;
 	import starling.events.TouchPhase;
 	import starling.text.TextField;
@@ -200,11 +201,12 @@ package
 		private function onQuadTouch(e:TouchEvent):void 
 		{
 			if (gameOver) return;
+			var touch:Touch = e.getTouch((e.currentTarget as Quad));
 			if (e.getTouch(e.currentTarget as Quad, TouchPhase.BEGAN)) {
 				if (pause) {
 					newPipePosition();
 					pause = false;
-					TweenLite.to(getReadyImage, .5, { ease:Linear.easeNone, alpha:0 } );
+					TweenLite.to(getReadyImage, 0.5, { ease:Linear.easeNone, alpha:0 } );
 					velocity = -jump_force;
 				}
 				velocity = -jump_force;

@@ -17,7 +17,7 @@
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="src" />
-    <class path="D:\Share\starling 2.0.1 src" />
+    <class path="..\Library\starling 2.1 src" />
   </classpaths>
   <!-- Build options -->
   <build>
